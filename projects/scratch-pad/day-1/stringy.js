@@ -60,15 +60,11 @@ return string.toUpperCase();
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-    // mag.replace 
-   /*  string.toLowerCase();
-return string.toDashCase(); */
-function styleHyphenFormat(propertyName) {
-  function upperToHyphenLower(match, offset, string) {
-    return (offset > 0 ? '-' : '') + match.toLowerCase();
-  }
-  return string.replace(/[A-Z]/g, upperToHyphenLower);
-}
+   //step one: force lowercase
+   // step two: split function 
+   string = string.replace(/\s+/g, '-').toLowerCase();
+   return string;
+    
 
     // YOUR CODE ABOVE HERE //
 }
@@ -87,9 +83,9 @@ function styleHyphenFormat(propertyName) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
-
+    //If (string[0].beginsWith(char)){
+    //    return turn;
+   // }
     // YOUR CODE ABOVE HERE //
 }
 
